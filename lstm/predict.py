@@ -30,7 +30,7 @@ future_data['Year'] = future_data['Date'].dt.year
 future_data['dayofweek'] = future_data['Date'].dt.dayofweek
 
 # Define features
-features = ['dayofweek', 'tempmax', 'tempmin', 'temp', 'cloudcover', 'dew', 'humidity', 'solarenergy', 'Month', 'Day', 'Year']
+features = ['dayofweek', 'tempmax', 'tempmin', 'temp', 'dew', 'humidity', 'solarenergy', 'Month', 'Day', 'Year']
 
 # Preprocess and reshape data for LSTM
 X_future = future_data[features].values
