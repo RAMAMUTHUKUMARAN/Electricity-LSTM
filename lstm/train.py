@@ -19,7 +19,7 @@ historical_data['Year'] = historical_data['Date'].dt.year
 historical_data['dayofweek'] = historical_data['Date'].dt.dayofweek
 
 # Define features and target
-features = ['dayofweek', 'tempmax', 'tempmin', 'temp', 'cloudcover', 'dew', 'humidity', 'solarenergy', 'Month', 'Day', 'Year']
+features = ['dayofweek', 'tempmax', 'tempmin', 'temp', 'dew', 'humidity', 'solarenergy', 'Month', 'Day', 'Year']
 target = 'Max Demand Met (MW)'
 
 X = historical_data[features].values
